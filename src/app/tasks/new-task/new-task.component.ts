@@ -6,8 +6,7 @@ import { ActivatedRoute, CanDeactivateFn, Router, RouterLink } from '@angular/ro
 
 @Component({
   selector: 'app-new-task',
-  standalone: true,
-  imports: [FormsModule, RouterLink],
+  standalone: false,
   templateUrl: './new-task.component.html',
   styleUrl: './new-task.component.css',
 })

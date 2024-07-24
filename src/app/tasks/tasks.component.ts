@@ -7,10 +7,8 @@ import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-tasks',
-  standalone: true,
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css'],
-  imports: [TaskComponent, RouterLink],
 })
 export class TasksComponent implements OnInit, OnDestroy {
   userId: string = 'dummy';
