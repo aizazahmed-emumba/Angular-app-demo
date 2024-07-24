@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 
-import { Task, type NewTaskData } from './task/task.model';
+import { Task, type NewTaskData } from '../types/task.model';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })

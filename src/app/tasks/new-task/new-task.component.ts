@@ -1,7 +1,7 @@
 import { Component, inject, input, OnInit, } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { TasksService } from '../tasks.service';
+import { TasksService } from '../../services/tasks.service';
 import { ActivatedRoute, CanDeactivateFn, Router, RouterLink } from '@angular/router';
 
 @Component({

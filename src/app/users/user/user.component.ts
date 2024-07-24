@@ -1,5 +1,5 @@
 import { Component, computed, input } from '@angular/core';
-import { type User } from './user.model';
+import { type User } from '../../types/user.model';
 
 
 @Component({

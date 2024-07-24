@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AbstractControl, FormArray, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../../services/auth.service';
 import { Router, RouterLink } from '@angular/router';
 
 
@@ -21,7 +21,7 @@ function passwordMatchValidator(control: AbstractControl) {
   standalone: true,
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css',
-  imports: [ReactiveFormsModule , RouterLink]
+  imports: [ReactiveFormsModule, RouterLink]
 })
 export class SignupComponent {
 

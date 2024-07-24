@@ -13,7 +13,6 @@ const routes: Routes = [
         path: 'tasks',
         component: TasksComponent
     },
-
     {
         path: 'tasks/new',
         component: NewTaskComponent,
