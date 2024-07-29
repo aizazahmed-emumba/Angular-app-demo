@@ -1,13 +1,14 @@
 import { Injectable, signal } from '@angular/core';
 
 import { Task, type NewTaskData } from '../types/task.model';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class TasksService {
 
 
-  tasksChanged$ = new BehaviorSubject<void>(void 0);
+  tasksChanged$ = new Subject<void>(); // change to subject
+  tasksLength$ = new BehaviorSubject<number>(0);
 
   private tasks = [
     {
